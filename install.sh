@@ -33,3 +33,5 @@ su homma
 cd ~
 
 echo "[[ -z \$DISPLAY && \$XDG_VTNR -eq 1 ]] && startx -- -nocursor" >> .bash_profile
+
+sudo reboot
