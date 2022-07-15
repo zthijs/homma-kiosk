@@ -27,6 +27,7 @@ echo "Vul de URL voor het scherm in : "
 read url
 
 rm -f /etc/xdg/openbox/autostart
+touch /etc/xdg/openbox/autostart
 printf "xset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUAJ+-zbhrqfpoklgtje '$url'" >> /etc/xdg/openbox/autostart
 
 su homma
