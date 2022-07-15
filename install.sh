@@ -30,9 +30,4 @@ read url
 
 printf "xset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUJ+-zbhrqfpoklgtje '$url'" > /etc/xdg/openbox/autostart
 
-su homma
-cd ~
-
-echo "[[ -z \$DISPLAY && \$XDG_VTNR -eq 1 ]] && startx -- -nocursor" >> .bash_profile
-
-sudo reboot
+reboot
