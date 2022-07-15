@@ -8,6 +8,8 @@ fi
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
+sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox -y
+
 
 cd ~
 
@@ -26,7 +28,7 @@ cd kweb_upgrade_buster_20190823
 echo "Vul de URL voor het scherm in : "
 read url
 
-printf "xset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUAJ+-zbhrqfpoklgtje '$url'" > /etc/xdg/openbox/autostart
+printf "xset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUJ+-zbhrqfpoklgtje '$url'" > /etc/xdg/openbox/autostart
 
 su homma
 cd ~
