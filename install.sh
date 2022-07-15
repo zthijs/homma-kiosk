@@ -28,6 +28,6 @@ cd kweb_upgrade_buster_20190823
 echo "Vul de URL voor het scherm in : "
 read url
 
-printf "#!/bin/sh\nxset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUAJ+-zbhrqfpoklgtje '$url'" > /etc/xdg/openbox/autostart
+printf "xset s off\nxset s noblank\nxset -dpms\nsetxkbmap -option terminate:ctrl_alt_bksp\nkweb -KHCUAJ+-zbhrqfpoklgtje '$url'" > /etc/xdg/openbox/autostart
 
 reboot
