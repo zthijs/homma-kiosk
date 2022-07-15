@@ -5,26 +5,6 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-sudo apt-get update
-sudo apt-get upgrade
-
-
-cd ~
-
-wget http://steinerdatenbank.de/software/kweb-1.7.9.8.tar.gz
-tar -xzf kweb-1.7.9.8.tar.gz
-cd kweb-1.7.9.8
-./debinstall
-
-cd ~
-
-wget http://steinerdatenbank.de/software/kweb_upgrade_buster_20190823.tar.gz
-tar -xzf kweb_upgrade_buster_20190823.tar.gz
-cd kweb_upgrade_buster_20190823
-./install
-
-echo "Vul de URL voor het scherm in : "
-read url
 
 rm -f /etc/xdg/openbox/autostart
 touch /etc/xdg/openbox/autostart
